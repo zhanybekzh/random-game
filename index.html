@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Whack A Mole!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-content__inner">
+          <h2 style="font-size: 50px">Введите ваше имя</h2>
+          <input type="text" id="playerName" placeholder="Ваше имя" />
+          <button id="submitName" class="btn">OK</button>
+        </div>
+      </div>
+    </div>
+    <div id="historyModal" class="modal">
+      <div class="modal-content">
+        <h2>История последних 10 игр</h2>
+        <ul id="historyList"></ul>
+        <button id="closeHistoryBtn" class="btn">Закрыть</button>
+      </div>
+    </div>
+    <div class="game-container">
+      <div class="info-block">
+        <h1 id="greeting">Привет, Игрок!</h1>
+        <p style="font-size: 45px; margin: 20px 0 30px 0">
+          Основные правила игры: кликай на кротов как можно быстрее!
+        </p>
+        <div class="buttons-container">
+          <button id="startGame" class="btn">Start Game</button>
+          <button id="historyBtn" class="btn">History</button>
+        </div>
+        <h2><span class="score">0</span></h2>
+      </div>
+
+      <div class="game">
+        <div class="hole hole1">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+          <div class="mole"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
