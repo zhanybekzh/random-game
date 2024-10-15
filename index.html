@@ -8,61 +8,82 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" href="https://fav.farm/🔥" />
   </head>
   <body>
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <div class="modal-content__inner">
-          <h2 style="font-size: 50px">Введите ваше имя</h2>
-          <input type="text" id="playerName" placeholder="Ваше имя" />
-          <button id="submitName" class="btn">OK</button>
+    <main>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-content__inner">
+            <h2 style="font-size: 50px">Введите ваше имя</h2>
+            <input type="text" id="playerName" placeholder="Ваше имя" />
+            <button id="submitName" class="btn">OK</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="historyModal" class="modal">
-      <div class="modal-content">
-        <h2>История последних 10 игр</h2>
-        <ul id="historyList"></ul>
-        <button id="closeHistoryBtn" class="btn">Закрыть</button>
-      </div>
-    </div>
-    <div class="game-container">
-      <div class="info-block">
-        <h1 id="greeting">Привет, Игрок!</h1>
-        <p style="font-size: 45px; margin: 20px 0 30px 0">
-          Основные правила игры: кликай на кротов как можно быстрее!
-        </p>
-        <div class="buttons-container">
-          <button id="startGame" class="btn">Start Game</button>
-          <button id="historyBtn" class="btn">History</button>
+      <div id="historyModal" class="modal">
+        <div class="modal-content">
+          <h2>История последних 10 игр</h2>
+          <ul id="historyList"></ul>
+          <button id="closeHistoryBtn" class="btn">Закрыть</button>
         </div>
-        <h2><span class="score">0</span></h2>
       </div>
+      <div class="game-container">
+        <div class="info-block">
+          <h1 id="greeting">Привет, Игрок!</h1>
+          <p style="font-size: 45px; margin: 20px 0 30px 0">
+            Основные правила игры: кликай на кротов как можно быстрее!
+          </p>
+          <div class="buttons-container">
+            <button id="startGame" class="btn">Start Game</button>
+            <button id="historyBtn" class="btn">History</button>
+          </div>
+          <h2><span class="score">0</span></h2>
+        </div>
 
-      <div class="game">
-        <div class="hole hole1">
-          <div class="mole"></div>
-        </div>
-        <div class="hole hole2">
-          <div class="mole"></div>
-        </div>
-        <div class="hole hole3">
-          <div class="mole"></div>
-        </div>
-        <div class="hole hole4">
-          <div class="mole"></div>
-        </div>
-        <div class="hole hole5">
-          <div class="mole"></div>
-        </div>
-        <div class="hole hole6">
-          <div class="mole"></div>
+        <div class="game">
+          <div class="hole hole1">
+            <div class="mole"></div>
+          </div>
+          <div class="hole hole2">
+            <div class="mole"></div>
+          </div>
+          <div class="hole hole3">
+            <div class="mole"></div>
+          </div>
+          <div class="hole hole4">
+            <div class="mole"></div>
+          </div>
+          <div class="hole hole5">
+            <div class="mole"></div>
+          </div>
+          <div class="hole hole6">
+            <div class="mole"></div>
+          </div>
         </div>
       </div>
-    </div>
-
+    </main>
+    <footer class="text-center">
+      <div class="container">
+        <div class="footer">
+          <a
+            href="https://rs.school/courses/javascript-ru"
+            class="school__link"
+          >
+            <img src="./assets/img/rs-school-logo.svg" alt="RSSchool link"
+          /></a>
+          <a href="https://github.com/zhanybekzh" class="footer__author-link">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+          <div class="date-creation">2024</div>
+        </div>
+      </div>
+    </footer>
     <script src="./game.js"></script>
   </body>
 </html>
